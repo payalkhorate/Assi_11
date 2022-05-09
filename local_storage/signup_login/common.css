@@ -1,0 +1,70 @@
+*{
+    margin:opx;
+    padding:0px
+}
+#nav{
+    display:flex;
+    height:80px;
+    width:100%;
+    background-color: rgb(29, 29, 75);
+    color:white;
+    border-radius: 20px;
+}
+#log{
+    width:80%;
+}
+#log>h1{
+    margin-left: 20px; 
+}
+#text{
+    width:18%;
+    display:flex;
+    justify-content: space-between;
+}
+#user{
+    width:25%;
+    display:flex;
+}
+#user>h1{
+    margin-left: 50px;
+}
+a{
+    color: white;
+    text-decoration: none;
+}
+
+*{
+    margin:0px;
+    padding: 0px;
+}
+form{
+    width:25%;
+    margin:auto;
+    background-color: rgb(106, 202, 106);
+    margin-top: 100px;
+    height: 300px;
+    padding-top: 50px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+}
+input{
+    display: block;
+    width:65%;
+    margin: auto;
+    margin-top: 20px;
+    padding:7px 15px 7px 15px;
+    font-size: 20px;
+    border-radius: 5px;
+    border: none;
+}
+#submit {
+    width: 35%;
+    margin: auto;
+    background-color: rgb(30, 12, 58);
+    color: white;
+    border: none;
+    border-radius: 10px;
+    margin-top: 20px;
+    font-size: 18px;
+  }
+
+  
