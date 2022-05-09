@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="common.css" />
+    <style>
+        #container{
+        
+        width:350px;
+        height:350px;
+        margin:auto;
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+        padding-left: 30px;
+        
+      }
+      h3{
+          text-align: center;
+          padding-top: 20px;
+      }
+      input{
+          font-size:25px;
+      }
+      #submit {
+  width: 70%;
+  margin: auto;
+  background-color: rgb(24, 24, 189);
+  color: white;
+  border: none;
+  border-radius: 15px;
+  margin-top: 20px;
+}
+    </style>
+</head>
+<body>
+    <div id="navbar">
+        <div><a href="signup.html">Sign Up</a></div>
+        <div><a href="login.html">Log In</a></div>
+        <div><a href="#">Mens</a></div>
+        <div><a href="#">Womens</a></div>
+         </div>
+    <div id="container">
+        <h3>Sign In</h3>
+        <form id="loginform">
+            <p>Email</p>
+            <input id="c_mail" type="text" placeholder="Enter email"/>
+            <p>Password</p>
+            <input id="c_pass"type="text" placeholder="Enter password"/> 
+            <input id="submit" type="submit" name="submit" value="Log In" />
+        </form>
+       <div>
+
+       </div>
+   
+    </div>
+</body>
+</html>
+<script>
+    var form=document.querySelector("#loginform");
+ var userData=JSON.parse(localStorage.getItem("userData"))
+    
+ form.addEventListener("submit",function(event){
+  event.preventDefault();
+
+  var data={
+      email:loginform.c_mail.value,
+      password:loginform.c_pass.value,
+  }
+if(userData==null){
+    alert("plese create account")
+}
+  else if(userData.email==data.email && userData.password==data.password){
+      alert("Sign in successful")
+      localStorage.setItem("signin",JSON.stringify(userData))
+      window.location.href="welcome.html"
+  }
+  else{
+      alert("user doen't exist")
+  }
+ })
+  
+        
+    
+
+</script>
